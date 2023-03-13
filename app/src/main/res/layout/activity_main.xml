@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5dfbb"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="409dp"
+        android:layout_height="282dp"
+        android:src="@drawable/item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="1dp"></ImageView>
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="startNewActivity"
+        android:scaleType="fitXY"
+        android:text="info"
+        app:iconTint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/map" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openSiz"
+        android:scaleType="fitXY"
+        android:text="СИЗ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:srcCompat="@drawable/mask" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openTools"
+        android:scaleType="fitXY"
+        android:text="Tools "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button4"
+        app:srcCompat="@drawable/search" />
+
+    <ImageButton
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openDizain"
+        android:scaleType="fitXY"
+        android:text="design"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/filter" />
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginBottom="16dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="goFlow"
+        android:scaleType="fitXY"
+        android:text="Flow"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/flow" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openDead"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:srcCompat="@drawable/dead" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openSort"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
+        app:layout_constraintEnd_toEndOf="@+id/button10"
+        app:srcCompat="@drawable/color_pallet_icon_125322" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:backgroundTint="#f2542d"
+        android:maxWidth="100dp"
+        android:maxHeight="100dp"
+        android:onClick="openQR"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button6"
+        app:srcCompat="@drawable/barcode_scanner_4249" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
