@@ -3,8 +3,8 @@
     <item android:drawable="@color/white"/>
     <item>
         <bitmap
-            android:gravity="bottom"
-            android:src="@drawable/kairoslogo"/>
+            android:gravity="top"
+            android:src="@drawable/slogan"/>
     </item>
 
     <item>

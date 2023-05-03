@@ -12,30 +12,32 @@
         android:theme="@style/Theme.KotoCar"
         tools:targetApi="31">
         <activity
-            android:name=".tools"
+            android:name=".sortirovka"
             android:exported="false" />
         <activity
-            android:name=".sort"
+            android:name=".sborka"
+            android:exported="false" />
+        <activity
+            android:name=".kontrol"
+            android:exported="false" />
+        <activity
+            android:name=".filtr"
+            android:exported="false" />
+        <activity
+            android:name=".detail"
+            android:exported="false" />
+        <activity
+            android:name=".dangerzone"
             android:exported="false" />
         <activity
             android:name=".siz"
             android:exported="false" />
         <activity
-            android:name=".qr"
-            android:exported="false" />
-        <activity
             android:name=".info"
             android:exported="false" />
         <activity
-            android:name=".dizain"
-            android:exported="false" />
-        <activity
-            android:name=".dead"
-            android:exported="false" />
-
-        <activity android:name=".MainActivity"
+            android:name=".MainActivity"
             android:exported="true" />
-
         <activity
             android:name=".SplashScreen"
             android:exported="true"

@@ -1,11 +1,14 @@
 package com.example.kotocar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.ComponentName;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,9 +16,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //Запуск neiron
+
     }
 
-    public void startNewActivity(View v) {
+    public void openInfo(View v) {
         Intent intent = new Intent(this, info.class);
         startActivity(intent);
     }
@@ -25,34 +31,37 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void openTools(View v) {
-        Intent intent = new Intent(this, tools.class);
+    public void openDangerzone(View v) {
+        Intent intent = new Intent(this, dangerzone.class);
         startActivity(intent);
     }
 
-    public void openDizain(View v) {
-        Intent intent = new Intent(this, dizain.class);
+    public void openDetail(View v) {
+        Intent intent = new Intent(this, detail.class);
         startActivity(intent);
     }
 
-    public void openDead(View v) {
-        Intent intent = new Intent(this,dead.class);
+    public void openSortirovka(View v) {
+        Intent intent = new Intent(this, sortirovka.class);
         startActivity(intent);
     }
 
-    public void openSort(View v) {
-        Intent intent = new Intent(this,sort.class);
+    public void openFiltr(View v) {
+        Intent intent = new Intent(this, filtr.class);
         startActivity(intent);
     }
 
-    public void openQR(View v) {
-        Intent intent = new Intent(this,qr.class);
+    public void openKontrol(View v) {
+        Intent intent = new Intent(this, kontrol.class);
         startActivity(intent);
     }
 
-
-    public void goFlow(View v){
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Kulikov205/Glas"));
+    public void openSborka(View v) {
+        Intent intent = new Intent(this, sborka.class);
+        startActivity(intent);
+    }
+    public void openneiro1(View v) {
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://colab.research.google.com/drive/18v988yxoXwRTAmi4Gx1I6ZmGP6Vt8lWm?usp=share_link"));
         startActivity(browserIntent);
     }
 
